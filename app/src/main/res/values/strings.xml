@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">RPIRC</string>
+    <string name="action_settings">Settings</string>
+    <string name="Information">List paired BlueTooth devices, then select one &amp; connect!...</string>
+    <string name="ListDevices">List paired devices</string>
+    <string name="ConnectDevice">Connect to device</string>
+    <string name="ForwardButton">FORWARD</string>
+    <string name="BackwardButton">BACKWARD</string>
+    <string name="LeftButton">LEFT</string>
+    <string name="RightButton">RIGHT</string>
+    <string name="StopButton">STOP</string>
+    <string name="UseSensors">Sensors\nmode</string>
+    <string name="AvoidObstacles">Avoid\nobstacles</string>
+    <string name="StopMotion">Stop motion</string>
+    <string name="CameraOn">Camera</string>
+    <string name="address_port">Enter RaspberryPi\'s address:port like:</string>
+    <string name="hint_address_port">address:port</string>
+    <string name="OkButton">OK</string>
+    <string name="CancelButton">Cancel</string>
+    <string name="MotorsOn">Motors</string>
+    <string name="f1">Forward level 1</string>
+    <string name="f2">Forward level 2</string>
+    <string name="b1">Backward level 1</string>
+    <string name="b2">Backward level 2</string>
+    <string name="r1">Right level 1</string>
+    <string name="r2">Right level 2</string>
+    <string name="r3">Right level 3</string>
+    <string name="l1">Left level 1</string>
+    <string name="l2">Left level 2</string>
+    <string name="l3">Left level 3</string>
+</resources>

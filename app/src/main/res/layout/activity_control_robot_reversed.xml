@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ControlRobot">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/forward2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="148dp"
+            android:layout_marginLeft="148dp"
+            android:layout_marginTop="104dp"
+            android:background="@null"
+            android:contentDescription="@string/f2"
+            android:padding="10dp"
+            android:tint="@color/tint_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/f2" />
+
+        <ImageButton
+            android:id="@+id/forward1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/f1"
+            android:padding="10dp"
+            android:tint="@color/tint_icon"
+            app:layout_constraintEnd_toEndOf="@+id/forward2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/forward2"
+            app:layout_constraintTop_toBottomOf="@+id/forward2"
+            app:srcCompat="@drawable/f1" />
+
+        <ImageButton
+            android:id="@+id/backward1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/b1"
+            android:padding="10dp"
+            android:tint="@color/tint_icon"
+            app:layout_constraintEnd_toEndOf="@+id/stop"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/stop"
+            app:layout_constraintTop_toBottomOf="@+id/stop"
+            app:srcCompat="@drawable/b1" />
+
+        <ImageButton
+            android:id="@+id/backward2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/b2"
+            android:padding="10dp"
+            android:tint="@color/tint_icon"
+            app:layout_constraintEnd_toEndOf="@+id/backward1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/backward1"
+            app:layout_constraintTop_toBottomOf="@+id/backward1"
+            app:srcCompat="@drawable/b2" />
+
+        <ImageButton
+            android:id="@+id/left1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@null"
+            android:contentDescription="@string/l1"
+            android:padding="10dp"
+            android:src="@drawable/l1"
+            android:tint="@color/tint_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/stop"
+            app:layout_constraintEnd_toStartOf="@+id/stop"
+            app:layout_constraintTop_toTopOf="@+id/stop" />
+
+        <ImageButton
+            android:id="@+id/left2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@null"
+            android:contentDescription="@string/l2"
+            android:padding="10dp"
+            android:tint="@color/tint_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/left1"
+            app:layout_constraintEnd_toStartOf="@+id/left1"
+            app:layout_constraintTop_toTopOf="@+id/left1"
+            app:srcCompat="@drawable/l2" />
+
+        <ImageButton
+            android:id="@+id/right1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@null"
+            android:contentDescription="@string/r1"
+            android:padding="10dp"
+            android:src="@drawable/r1"
+            android:tint="@color/tint_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/stop"
+            app:layout_constraintStart_toEndOf="@+id/stop"
+            app:layout_constraintTop_toTopOf="@+id/stop"
+            app:layout_constraintVertical_bias="0.571" />
+
+        <ImageButton
+            android:id="@+id/right2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@null"
+            android:contentDescription="@string/r2"
+            android:padding="10dp"
+            android:tint="@color/tint_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/right1"
+            app:layout_constraintStart_toEndOf="@+id/right1"
+            app:layout_constraintTop_toTopOf="@+id/right1"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/r2" />
+
+        <CheckBox
+            android:id="@+id/use_sensors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            android:text="@string/UseSensors"
+            app:layout_constraintBottom_toTopOf="@+id/left2"
+            app:layout_constraintEnd_toEndOf="@+id/left2"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="@+id/left2" />
+
+        <CheckBox
+            android:id="@+id/avoid_obstacles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            android:text="@string/AvoidObstacles"
+            app:layout_constraintBottom_toTopOf="@+id/right2"
+            app:layout_constraintEnd_toEndOf="@+id/right2"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="@+id/right2" />
+
+        <ImageButton
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/StopMotion"
+            android:padding="10dp"
+            android:tint="@color/tint_icon"
+            app:layout_constraintEnd_toEndOf="@+id/forward1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/forward1"
+            app:layout_constraintTop_toBottomOf="@+id/forward1"
+            app:srcCompat="@drawable/pause" />
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="380dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </WebView>
+
+        <CheckBox
+            android:id="@+id/show_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="@string/CameraOn"
+            app:layout_constraintEnd_toEndOf="@+id/left2"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="@+id/left2"
+            app:layout_constraintTop_toBottomOf="@+id/left2" />
+
+        <CheckBox
+            android:id="@+id/start_motors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="@string/MotorsOn"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/right2"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="@+id/right2"
+            app:layout_constraintTop_toBottomOf="@+id/right2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
